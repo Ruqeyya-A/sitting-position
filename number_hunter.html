@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dəniz Altında Rəqəm Ovçuluğu</title>
+    <style 
+    type="text/css">body { cursor: url('data:image/x-icon;base64,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sHX/9eL/58T56tf/6s3/5rr/473/68//5Lj/5Lv/5Lv+6sH/7Mf/9eP/z43/zYf+zoz/0I7/zoj/z4v/2aT/37X61aP/6cnVsHUAAAAAAAAAAAAAAAAAAAAAAAAAAADVsHX//fb/58n86tD/68v/68z/47n+6rr/5Lj/5Lv/5Lv/5Lv/5Lj/68j99ef+7dD/9+Xx0Kb/1aD/1J7/2aT/79X91aH/7M3/+O7VsHUAAAAAAAAAAAAAAAAAAAAAAAAAAADVsHX/6Mn/9+b//fn/////////////4rr/////////////////7s3w17b/89j/6sX/6sz+6MX+68b82bL/7dT+1KP/4bj/9eLVsHUAAAAAAAAAAAAAAAAAAAAAAAAAAADVsHX+9+T/+/b////10aD10aD////////////10aD10aD/////////7c7+5bn/5Lv/5rv/5Lv/7sn/7NL9897+5bv+47f+9+PVsHUAAAAAAAAAAAAAAAAAAAAAAAAAAADVsHX/9uj/+e/////10aD10aD10aD////10aD10aD10aD10aD/////////////5Lv/5Lv+5bv+7sr/9OH/4LX+5br+6cn//PUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADVsHX89+7/8tv////10aD10aD10aD10aD10aD10aD////10aD10aD10aD/////7cz/6Mj68eL/5rv/6cn/68v/+vHVsHUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADVsHX++/D/79z10aD////89ej10aD10aD10aD////10aD10aD10aD10aD////y1qn/1Z7+4bj/7c7979v//PjVsHUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADVsHX+8dr/687/47r+5br99ef/+/b+9eH/6sv10aD10aD/////////5sL/683+7M/+6MX/9+b9+vbVsHUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADVsHX57tz/9eP/7cv/6cH+5bv+5bv/5Lj/573/7MX/+vL/7dD/6cn/6sr/9eT/9+P/+e/VsHXVsHUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADVsHXVsHX9+fT/+OX/5sf/9/L++vb/+fL////95sn/8tz/+Of/9ebVsHXVsHXVsHUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADVsHXVsHX/+/b/+OT/9eP/9eP+9+P++/DVsHXVsHXVsHUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADVsHXVsHXVsHXVsHXVsHXVsHUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////+P///+EX///nF///5Hf//+zk///M5n//2MR/w5GI/4CHOf8ADzP/AA9j/gAAx/4AAN/+AAAf/gAAA/4AAAH+AAAA/gAAAP4AAAB/AAAAfwAAAH8AAAD/gAAA/4AAAf/AAAP/wAAH/+AAH//4AP///gf////////////w=='), auto; }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(180deg, #87CEEB 0%, #4169E1 50%, #191970 100%);
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .game-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background: rgba(0, 100, 200, 0.9);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .mission {
+            font-size: 25px;
+            margin: 10px 0;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .wheel-container {
+            position: relative;
+            width: 100px;
+            height: 100px;
+        }
+
+        .wheel {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: conic-gradient(
+                #ff6b6b 0deg 60deg,
+                #4ecdc4 60deg 120deg,
+                #45b7d1 120deg 180deg,
+                #96ceb4 180deg 240deg,
+                #ffeaa7 240deg 300deg,
+                #dda0dd 300deg 360deg
+            );
+            /* cursor: ; */
+            transition: transform 0.3s ease;
+            border: 4px solid white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .wheel:hover {
+            transform: scale(1.1);
+        }
+
+        .wheel.spinning {
+            animation: spin 2s ease-out;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(1440deg); }
+        }
+
+        .calculation-area {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 10px;
+            min-width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+        }
+
+        .found-numbers {
+            display: flex;
+            gap: 10px;
+            margin: 10px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .number-chip {
+            background: #4ecdc4;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .number-chip:hover {
+            background: #45b7d1;
+            transform: scale(1.1);
+        }
+
+        .number-chip.selected {
+            border-color: #ff6b6b;
+            box-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
+        }
+
+        .calculate-btn {
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .calculate-btn:hover {
+            background: #e55555;
+            transform: translateY(-2px);
+        }
+
+        .result {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2d3436;
+            margin: 10px 0;
+            min-height: 30px;
+        }
+
+        .ocean-surface {
+            flex: 1;
+            position: relative;
+            background: linear-gradient(180deg, rgba(135, 206, 235, 0.8) 0%, rgba(65, 105, 225, 0.9) 100%);
+            overflow: hidden;
+        }
+
+        .magnifying-glass {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            border: 5px solid #333;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(2px);
+            pointer-events: none;
+            z-index: 100;
+            transition: transform 0.05s ease;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+
+        .magnifying-glass::after {
+            content: '';
+            position: absolute;
+            width: 35px;
+            height: 6px;
+            background: #333;
+            right: -25px;
+            bottom: -25px;
+            transform: rotate(45deg);
+            border-radius: 3px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+
+        .magnifying-glass::before {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border: 2px solid rgba(255,255,255,0.5);
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .hidden-number {
+            position: absolute;
+            font-size: 24px;
+            font-weight: bold;
+            color: #2d3436;
+            cursor: pointer;
+            padding: 8px 30px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            opacity: 0;
+            z-index: 50;
+            user-select: none;
+        }
+
+        .hidden-number.visible {
+            opacity: 1;
+            border-color: #4ecdc4;
+            box-shadow: 0 0 15px rgba(76, 205, 196, 0.7);
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .hidden-number:hover {
+            transform: scale(1.2);
+            background: rgba(76, 205, 196, 0.9);
+            color: white;
+        }
+
+        .sea-emoji {
+            position: absolute;
+            font-size: 30px;
+            opacity: 0.4;
+            pointer-events: none;
+            z-index: 10;
+            animation: float 4s infinite ease-in-out;
+        }
+
+        .bubbles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 5;
+        }
+
+        .bubble {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            animation: float 3s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+
+        .wave {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"><path d="M0,50 Q250,0 500,50 T1000,50 L1000,100 L0,100 Z" fill="%23ffffff" opacity="0.3"/></svg>');
+            background-size: 1000px 50px;
+            animation: wave 3s ease-in-out infinite;
+            z-index: 1;
+        }
+
+        @keyframes wave {
+            0%, 100% { transform: translateX(0px); }
+            50% { transform: translateX(-50px); }
+        }
+
+        .score {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 18px;
+            color: #2d3436;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+
+        /* .instructions {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px 15px;
+            border-radius: 15px;
+            font-size: 14px;
+            color: #2d3436;
+            z-index: 1000;
+            max-width: 300px;
+        } */
+
+        @media (max-width: 768px) {
+            .title { font-size: 20px; }
+            .mission { font-size: 16px; }
+            .controls { flex-direction: column; gap: 10px; }
+            .calculation-area { min-width: 150px; }
+            .wheel { width: 60px; height: 60px; }
+            .magnifying-glass { width: 100px; height: 100px; }
+            /* .instructions { font-size: 12px; max-width: 200px; } */
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1 class="title">🌊 Dəniz Altında Rəqəm Ovçuluğu 🔍</h1>
+            <div class="mission" id="mission">Çarxı fırladın və tapşırığı öyrənin!</div>
+            <div class="controls">
+                <div class="wheel-container">
+                    <div class="wheel" id="wheel">🎯</div>
+                </div>
+                <div class="calculation-area">
+                    <div style="color: rgb(75, 129, 209);">Tapılmış rəqəmlər:</div>
+                    <div class="found-numbers" id="foundNumbers"></div>
+                    <button class="calculate-btn" id="calculateBtn" style="display: none;">Hesabla</button>
+                    <div class="result" id="result"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="score" id="score">Xal: 0</div>
+
+        <!-- <div class="instructions">
+            🔍 Böyüdücü şüşəni hərəkət etdirərək gizli rəqəmləri tapın!<br>
+            Tapılan rəqəmlərə klikləyin və tapşırığı yerinə yetirin.
+        </div> -->
+
+        <div class="ocean-surface" id="oceanSurface">
+            <div class="wave"></div>
+            <div class="magnifying-glass" id="magnifyingGlass"></div>
+            <div class="bubbles" id="bubbles"></div>
+        </div>
+    </div>
+
+    <script>
+        class NumberHuntingGame {
+            constructor() {
+                this.missions = [
+                    {
+                        text: "İki ədəd tap və topla!",
+                        type: "add",
+                        count: 2,
+                        operation: (nums) => nums.reduce((a, b) => a + b, 0)
+                    },
+                    {
+                        text: "Üç ədəd tap və topla!",
+                        type: "add",
+                        count: 3,
+                        operation: (nums) => nums.reduce((a, b) => a + b, 0)
+                    },
+                    {
+                        text: "İki ədəd tap və çıx!",
+                        type: "subtract",
+                        count: 2,
+                        operation: (nums) => Math.max(...nums) - Math.min(...nums)
+                    },
+                    {
+                        text: "Bir ədəd tap və 2-yə böl!",
+                        type: "divide",
+                        count: 1,
+                        operation: (nums) => Math.round(nums[0] / 2)
+                    },
+                    {
+                        text: "Bir ədəd tap və yüzlüklərə qədər yuvarlaqlaşdır!",
+                        type: "round",
+                        count: 1,
+                        operation: (nums) => Math.round(nums[0] / 100) * 100
+                    },
+                    {
+                        text: "Bir ədəd tap və onluqlara qədər yuvarlaqlaşdır!",
+                        type: "round",
+                        count: 1,
+                        operation: (nums) => Math.round(nums[0] / 10) * 10
+                    },
+                    {
+                        text: "Bir ədəd tap və 3-ə böl!",
+                        type: "divide",
+                        count: 1,
+                        operation: (nums) => Math.round(nums[0] / 3)
+                    },
+                    {
+                        text: "İki ədəd tap və vur!",
+                        type: "multiply",
+                        count: 2,
+                        operation: (nums) => nums[0] * nums[1]
+                    },
+                    {
+                        text: "Bir ədəd tap və 5-ə böl!",
+                        type: "divide",
+                        count: 1,
+                        operation: (nums) => Math.round(nums[0] / 5)
+                    },
+                    {
+                        text: "Bir ədəd tap və 10-a vur!",
+                        type: "multiply",
+                        count: 1,
+                        operation: (nums) => nums[0] * 10
+                    },
+                    {
+                        text: "İki ədəd tap, minliklərə qədər yuvarlaqlaşdır və topla!",
+                        type: "round",
+                        count: 2, // 2 ədəd istifadə edirik
+                        operation: (nums) => {
+                            const roundedNum1 = Math.round(nums[0] / 1000) * 1000; // Birinci ədədi minliyə yuvarla
+                            const roundedNum2 = Math.round(nums[1] / 1000) * 1000; // İkinci ədədi minliyə yuvarla
+                            return roundedNum1 + roundedNum2; // Yuvarlaqlaşdırılmış ədədləri topla
+                        }
+                    },
+                    {
+                        text: "5-ə bölünən iki ədəd tap, topla və yüzlüklərə qədər yuvarlaqlaşdır!",
+                        type: "round", // və ya "round" də yazıla bilər
+                        count: 2, // 5-ə bölünən 2 ədəd tapılır
+                        operation: (nums) => {
+                            const sum = nums[0] + nums[1]; // Ədədləri topla
+                            return Math.round(sum / 100) * 100; // Yüzlüklərə yuvarlaqlaşdır
+                        }
+                    },
+                    {
+                        text: "3-ə bölünən bir ədəd tap və minliklərə qədər yuvarlaqlaşdır!",
+                        type: "find", // və ya "round" də yazıla bilər
+                        count: 1, // Yalnız 1 ədəd lazımdır
+                        operation: (nums) => Math.round(nums[0] / 1000) * 1000 // Minliyə yuvarla
+                    }
+                ];
+                
+                this.currentMission = null;
+                this.foundNumbers = [];
+                this.selectedNumbers = [];
+                this.hiddenNumbers = [];
+                this.score = 0;
+                this.seaEmojis = ['🐠', '🐟', '🦈', '🐙', '🦀', '🐚', '⭐', '🪸', '🦑', '🐡', '🦞'];
+                
+                this.initializeGame();
+            }
+
+            initializeGame() {
+                this.generateHiddenNumbers();
+                this.generateSeaEmojis();
+                this.generateBubbles();
+                this.setupEventListeners();
+                this.updateDisplay();
+            }
+
+            generateHiddenNumbers() {
+                const oceanSurface = document.getElementById('oceanSurface');
+                
+                // Generate 25-30 hidden numbers
+                for (let i = 0; i < 10; i++) {
+                    const number = Math.floor(Math.random() * 90000) + 1;
+                    const numberElement = document.createElement('div');
+                    numberElement.className = 'hidden-number';
+                    numberElement.textContent = number;
+                    // Add minimum spacing (e.g., 50px between numbers)
+let left, top, overlapping;
+const minSpacing = 50; // Adjust as needed
+
+                    do {
+                    overlapping = false;
+                    left = Math.random() * (window.innerWidth - 100);
+                    top = Math.random() * (window.innerHeight - 400) + 100;
+  
+                    // Check if new position overlaps existing numbers
+                    for (const num of this.hiddenNumbers) {
+                        const rect = num.getBoundingClientRect();
+                        if (
+                        Math.abs(left - rect.left) < minSpacing &&
+                        Math.abs(top - rect.top) < minSpacing
+                        ) {
+                        overlapping = true;
+                        break;
+                        }
+                    }
+                    } while (overlapping);
+
+                    numberElement.style.left = left + 'px';
+                    numberElement.style.top = top + 'px';
+                    numberElement.addEventListener('click', () => this.collectNumber(number, numberElement));
+                    oceanSurface.appendChild(numberElement);
+                    this.hiddenNumbers.push(numberElement);
+                }
+            }
+
+            generateSeaEmojis() {
+                const oceanSurface = document.getElementById('oceanSurface');
+                
+                for (let i = 0; i < 15; i++) {
+                    const emoji = document.createElement('div');
+                    emoji.className = 'sea-emoji';
+                    emoji.textContent = this.seaEmojis[Math.floor(Math.random() * this.seaEmojis.length)];
+                    emoji.style.left = Math.random() * (window.innerWidth - 50) + 'px';
+                    emoji.style.top = Math.random() * (window.innerHeight - 350) + 100 + 'px';
+                    emoji.style.animationDelay = Math.random() * 4 + 's';
+                    oceanSurface.appendChild(emoji);
+                }
+            }
+
+            generateBubbles() {
+                const bubbles = document.getElementById('bubbles');
+                
+                for (let i = 0; i < 12; i++) {
+                    const bubble = document.createElement('div');
+                    bubble.className = 'bubble';
+                    bubble.style.left = Math.random() * 100 + '%';
+                    bubble.style.top = Math.random() * 100 + '%';
+                    bubble.style.width = Math.random() * 25 + 10 + 'px';
+                    bubble.style.height = bubble.style.width;
+                    bubble.style.animationDelay = Math.random() * 3 + 's';
+                    bubbles.appendChild(bubble);
+                }
+            }
+
+            setupEventListeners() {
+                const wheel = document.getElementById('wheel');
+                const oceanSurface = document.getElementById('oceanSurface');
+                const magnifyingGlass = document.getElementById('magnifyingGlass');
+                const calculateBtn = document.getElementById('calculateBtn');
+
+                wheel.addEventListener('click', () => this.spinWheel());
+                
+                // Fixed mouse movement tracking
+                oceanSurface.addEventListener('mousemove', (e) => {
+                    const rect = oceanSurface.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    
+                    magnifyingGlass.style.left = (x - 60) + 'px';
+                    magnifyingGlass.style.top = (y - 60) + 'px';
+                    
+                    // Check if magnifying glass is over any hidden numbers
+                    this.hiddenNumbers.forEach(numberEl => {
+                        if (numberEl.style.display === 'none') return;
+                        
+                        const numberRect = numberEl.getBoundingClientRect();
+                        const glassRect = magnifyingGlass.getBoundingClientRect();
+                        
+                        if (this.isOverlapping(numberRect, glassRect)) {
+                            numberEl.classList.add('visible');
+                        } else {
+                            numberEl.classList.remove('visible');
+                        }
+                    });
+                });
+
+                // Hide magnifying glass when mouse leaves ocean surface
+                oceanSurface.addEventListener('mouseleave', () => {
+                    magnifyingGlass.style.display = 'none';
+                    this.hiddenNumbers.forEach(numberEl => {
+                        numberEl.classList.remove('visible');
+                    });
+                });
+
+                // Show magnifying glass when mouse enters ocean surface
+                oceanSurface.addEventListener('mouseenter', () => {
+                    magnifyingGlass.style.display = 'block';
+                });
+
+                calculateBtn.addEventListener('click', () => this.calculateResult());
+            }
+
+            isOverlapping(rect1, rect2) {
+                const margin = 10; // Add some margin for better detection
+                return !(rect1.right < rect2.left - margin || 
+                        rect1.left > rect2.right + margin || 
+                        rect1.bottom < rect2.top - margin || 
+                        rect1.top > rect2.bottom + margin);
+            }
+
+            spinWheel() {
+                const wheel = document.getElementById('wheel');
+                wheel.classList.add('spinning');
+                
+                setTimeout(() => {
+                    wheel.classList.remove('spinning');
+                    this.currentMission = this.missions[Math.floor(Math.random() * this.missions.length)];
+                    this.foundNumbers = [];
+                    this.selectedNumbers = [];
+                    this.updateDisplay();
+                }, 2000);
+            }
+
+            collectNumber(number, element) {
+                if (this.currentMission && this.foundNumbers.length < this.currentMission.count) {
+                    this.foundNumbers.push(number);
+                    element.style.display = 'none';
+                    this.updateDisplay();
+                    
+                    // Visual feedback
+                    element.style.transform = 'scale(1.5)';
+                    element.style.background = '#4ecdc4';
+                    setTimeout(() => element.remove(), 300);
+                    
+                    // Generate new number to maintain difficulty
+                    this.generateNewNumber();
+                }
+            }
+
+            generateNewNumber() {
+                const oceanSurface = document.getElementById('oceanSurface');
+                const number = Math.floor(Math.random() * 999) + 1;
+                const numberElement = document.createElement('div');
+                numberElement.className = 'hidden-number';
+                numberElement.textContent = number;
+                numberElement.style.left = Math.random() * (window.innerWidth - 100) + 'px';
+                numberElement.style.top = Math.random() * (window.innerHeight - 350) + 200 + 'px';
+                
+                numberElement.addEventListener('click', () => this.collectNumber(number, numberElement));
+                oceanSurface.appendChild(numberElement);
+                this.hiddenNumbers.push(numberElement);
+            }
+
+            selectNumber(index) {
+                const numberChips = document.querySelectorAll('.number-chip');
+                numberChips[index].classList.toggle('selected');
+                
+                if (this.selectedNumbers.includes(index)) {
+                    this.selectedNumbers = this.selectedNumbers.filter(i => i !== index);
+                } else {
+                    this.selectedNumbers.push(index);
+                }
+            }
+
+            calculateResult() {
+                if (this.currentMission && this.foundNumbers.length === this.currentMission.count) {
+                    const result = this.currentMission.operation(this.foundNumbers);
+                    document.getElementById('result').textContent = `Nəticə: ${result}`;
+                    this.score += 10;
+                    document.getElementById('score').textContent = `Xal: ${this.score}`;
+                    
+                    // Reset for next mission
+                    setTimeout(() => {
+                        this.currentMission = null;
+                        this.foundNumbers = [];
+                        this.selectedNumbers = [];
+                        this.updateDisplay();
+                    }, 3000);
+                }
+            }
+
+            updateDisplay() {
+                const missionElement = document.getElementById('mission');
+                const foundNumbersElement = document.getElementById('foundNumbers');
+                const calculateBtn = document.getElementById('calculateBtn');
+                const resultElement = document.getElementById('result');
+
+                if (this.currentMission) {
+                    missionElement.textContent = this.currentMission.text;
+                    
+                    foundNumbersElement.innerHTML = '';
+                    this.foundNumbers.forEach((number, index) => {
+                        const chip = document.createElement('div');
+                        chip.className = 'number-chip';
+                        chip.textContent = number;
+                        chip.addEventListener('click', () => this.selectNumber(index));
+                        foundNumbersElement.appendChild(chip);
+                    });
+                    
+                    if (this.foundNumbers.length === this.currentMission.count) {
+                        calculateBtn.style.display = 'block';
+                    } else {
+                        calculateBtn.style.display = 'none';
+                    }
+                } else {
+                    missionElement.textContent = 'Çarxı fırladın və tapşırığı öyrənin!';
+                    foundNumbersElement.innerHTML = '';
+                    calculateBtn.style.display = 'none';
+                    resultElement.textContent = '';
+                }
+            }
+        }
+
+        // Initialize the game when page loads
+        window.addEventListener('load', () => {
+            new NumberHuntingGame();
+        });
+    </script>
+</body>
+</html>
